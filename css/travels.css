@@ -1,0 +1,12 @@
+body {
+  background: CornflowerBlue;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  zoom: 10%;
+  padding: 15px;
+  border-radius: 25px;
+}

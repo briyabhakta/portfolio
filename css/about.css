@@ -1,0 +1,19 @@
+body {
+  background: CornflowerBlue;
+}
+
+img {
+  display: block;
+  zoom: 20%;
+  border-radius: 25px;
+  padding: 25px;
+
+}
+
+p {
+  color: black;
+}
+
+#brother {
+  zoom: 50%
+}
