@@ -7,8 +7,13 @@ body {
   padding: 0;
 }
 
+a {
+  color:#b3b3ff;
+}
+
 a.skip{
   background: #ccddff;
+  color: #002266;
   padding: 6px;
   position: absolute;
   top: -40px;
@@ -21,10 +26,6 @@ a.skip:focus{
   top:20px;
   color: black;
   text-decoration-style: solid;
-}
-
-a {
-  color:#b3b3ff;
 }
 
 header {
@@ -40,6 +41,38 @@ header {
   list-style-type: none;
 }
 
+footer {
+  text-align: center;
+  color: #ccddff;
+  background: #002266;
+  padding: 8px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 1fr 1fr;
+}
+
+img {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 25px;
+}
+
+#portrait {
+  margin: 0 auto;
+  zoom: 90%;
+  padding: 15px;
+  grid-row: 1 / auto;
+  grid-column: 2 / auto;
+}
+
+#text {
+  grid-row: 2 / auto;
+  grid-column: 2 / auto;
+  text-align: center;
+}
 
 @media screen and (min-width: 800px){
 
@@ -56,5 +89,9 @@ header {
   header {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  footer {
+    text-align: left;
   }
 }
