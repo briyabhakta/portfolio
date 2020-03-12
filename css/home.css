@@ -39,6 +39,8 @@ header {
 
 .nav_tabs {
   list-style-type: none;
+  display: inline;
+  text-align: center;
 }
 
 footer {
@@ -46,6 +48,7 @@ footer {
   color: #ccddff;
   background: #002266;
   padding: 8px;
+
 }
 
 .container {
@@ -55,18 +58,41 @@ footer {
 }
 
 img {
+  margin: 0 auto;
   border-collapse: separate;
   border-spacing: 0;
   border-radius: 25px;
 }
 
 #portrait {
-  margin: 0 auto;
   zoom: 90%;
   padding: 15px;
   grid-row: 1 / auto;
   grid-column: 2 / auto;
+  animation-name: logo_wiggle;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
+
+
+@-webkit-keyframes logo_wiggle{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logo_wiggle{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 #text {
   grid-row: 2 / auto;
@@ -81,6 +107,8 @@ img {
     padding: 10px;
     padding-top: 0;
   }
+
+
 
 }
 
