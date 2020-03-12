@@ -49,10 +49,25 @@ footer {
   padding: 8px;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
 img {
-  zoom: 10%;
+  width: 50%;
+  border-radius: 25px;
+  padding: 15px;
 }
+
+p {
+  text-align: center;
+}
+
+
 
 @media screen and (min-width: 800px){
 
@@ -62,6 +77,10 @@ img {
     padding-top: 0;
   }
 
+  img {
+    width: 30%;
+  }
+
 }
 
 @media screen and (min-width: 850px){
@@ -69,6 +88,10 @@ img {
   header {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  img {
+    width: 25%;
   }
 
   footer {
