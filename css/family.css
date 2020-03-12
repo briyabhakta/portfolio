@@ -37,11 +37,6 @@ header {
   background: #002266;
 }
 
-h1 {
-  text-align: center;
-}
-
-
 .nav_tabs {
   list-style-type: none;
   display: inline;
@@ -53,7 +48,9 @@ footer {
   color: #ccddff;
   background: #002266;
   padding: 8px;
+
 }
+
 
 
 li {
@@ -149,7 +146,7 @@ p {
     justify-content: space-between;
   }
 
-  footer {
+  footer p{
     text-align: left;
   }
 }
