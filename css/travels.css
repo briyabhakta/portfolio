@@ -59,7 +59,8 @@ footer {
 
 .flip-card {
   background-color: transparent;
-  width: 90%;
+  width: 300px;
+  height: 200px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
 }
@@ -97,9 +98,8 @@ footer {
 }
 
 img {
-  width: 90%;
-  border-radius: 25px;
-  padding: 15px;
+  width: 100%;
+  height: 100%;
 }
 
 #intro {
@@ -121,10 +121,6 @@ p {
     padding-top: 0;
   }
 
-  img {
-    width: 30%;
-  }
-
 }
 
 @media screen and (min-width: 850px){
@@ -132,10 +128,6 @@ p {
   header {
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  img {
-    width: 25%;
   }
 
   footer {
