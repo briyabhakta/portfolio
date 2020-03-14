@@ -56,9 +56,6 @@ h2 {
   text-align: center;
   font-weight: normal;
   font-size: 35px;
-  /* animation-name: enter;
-  animation-duration: 5s;
-  animation-iteration-count: 1; */
 }
 
 a.skip{
@@ -85,6 +82,9 @@ header {
   padding: 15px;
   color: #ccddff;
   background: #002266;
+  position:relative;
+  right:0px;
+  width:100%;
 }
 
 .nav_tabs {
@@ -103,7 +103,10 @@ footer {
   text-align: center;
   color: #ccddff;
   background: #002266;
-  padding: 8px;
+  position:relative;
+  padding: 5px;
+  bottom:0px;
+  width:100%;
 }
 
 li {
@@ -147,11 +150,9 @@ img {
 @-webkit-keyframes enter{
   from {
     margin-left: -100%;
-    font-size: 1px;
   }
   to {
     margin-left: 0%;
-    font-size: 35px;
   }
 }
 
