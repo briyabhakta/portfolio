@@ -60,17 +60,20 @@ p {
 
 }
 
-.container {
+.homeContainer {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
 img {
-  margin: 0 auto;
-  border-collapse: separate;
-  border-spacing: 0;
+  padding: 5px;
+  margin: 15px;
+  border: 1px solid black;
   border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #portrait {
@@ -103,7 +106,7 @@ img {
 }
 
 
-#text {
+#intro {
   grid-row: 2 / auto;
   grid-column: 2 / auto;
   text-align: center;
