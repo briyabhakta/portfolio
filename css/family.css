@@ -37,6 +37,10 @@ header {
   background: #002266;
 }
 
+h1 {
+  font-family: Zapfino;
+}
+
 .nav_tabs {
   list-style-type: none;
   display: inline;
@@ -66,8 +70,9 @@ li {
 
 
 img {
-  padding: 15px;
+  padding: 5px;
   margin: 15px;
+  border: 1px solid black;
   border-radius: 25px;
   display: flex;
   justify-content: center;
@@ -100,14 +105,15 @@ img {
 
 
 p {
+  font-family: Baskerville;
   text-align: center;
 }
 
 .body {
-  background-color: #002266;
-  border: 10px solid black;
-  color: #ccddff;
-  border-radius: 30px;
+  background-color: #ffcc00;
+  border: 3px solid black;
+  color: #002266;
+  border-radius: 20px;
   margin: auto;
   padding: 30px;
 }

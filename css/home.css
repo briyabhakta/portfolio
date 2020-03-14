@@ -11,6 +11,10 @@ a {
   color:#b3b3ff;
 }
 
+h1 {
+  font-family: Zapfino;
+}
+
 a.skip{
   background: #ccddff;
   color: #002266;
@@ -48,6 +52,11 @@ footer {
   color: #ccddff;
   background: #002266;
   padding: 8px;
+
+}
+
+p {
+  font-family: Baskerville;
 
 }
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Contact</title>
-    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/contact.css">
   </head>
   <body>
     <a class="skip" href="#skip">Jump to Main Content</a>
@@ -14,14 +14,42 @@
           <li><a href="home.html">Home</a></li>
           <li><a href="family.html">Family</a></li>
           <li><a href="travels.html">Travels</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main id="skip">
-      <h2>Insert contact form here!!!</h2>
+      <p>Have a question or comment? Feel free to contact me, and I will get back
+        to you as soon as possible!</p>
+      <form action="https://formspree.io/xbjklvry" method="POST">
+<fieldset>
+   <legend>Contact Me!</legend>
+   <div class = "contact">
+      <label for ="name">Name:</label><input type="text" id ="name" name="name" required/>
+      <label for ="email">Email Address:</label><input type="text" id="email" name ="email" placeholder="ex: name@email.com" required/>
+   </div>
+   <div>
+     What is your relationship to the University of Michigan?
+     <select>
+       <option>Select</option>
+       <option>University of Michigan Student</option>
+       <option>University of Michigan Faculty & Staff</option>
+       <option>Not affiliated with the University of Michigan</option>
+       <option>Other</option>
+     </select>
+   </div>
+
+   <div>
+     <label for ="message">Message:</label></br><textarea name="message" rows="5" cols="30" placeholder="Please enter your message here!"></textarea>
+   </div>
+
+   <div>
+      <input type="reset"/>
+      <input type="submit" value=" Submit Form"/>
+   </div>
+   </fieldset>
+   </form>
     </main>
 
     <footer>

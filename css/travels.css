@@ -28,7 +28,6 @@ a.skip:focus{
   text-decoration-style: solid;
 }
 
-
 header {
   display: flex;
   flex-direction: column;
@@ -36,6 +35,10 @@ header {
   padding: 15px;
   color: #ccddff;
   background: #002266;
+}
+
+h1 {
+  font-family: Zapfino;
 }
 
 .nav_tabs {
@@ -59,8 +62,8 @@ footer {
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 250px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
 }
@@ -74,9 +77,11 @@ footer {
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner {
   transform: rotateY(180deg);
 }
+
+
 
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -92,8 +97,8 @@ footer {
 }
 
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #ffcc00;
+  color: #002266;
   transform: rotateY(180deg);
 }
 
@@ -108,8 +113,19 @@ img {
 
 p {
   text-align: center;
+  font-family: Baskerville;
+  margin: 15px;
 }
 
+#intro {
+  font-size: 20px;
+}
+
+.location {
+  color: #001133;
+  font-size: 20px;
+  font-weight: bold;
+}
 
 
 
