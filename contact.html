@@ -20,36 +20,57 @@
     </header>
 
     <main id="skip">
-      <p>Have a question or comment? Feel free to contact me, and I will get back
-        to you as soon as possible!</p>
-      <form action="https://formspree.io/xbjklvry" method="POST">
-<fieldset>
-   <legend>Contact Me!</legend>
-   <div class = "contact">
-      <label for ="name">Name:</label><input type="text" id ="name" name="name" required/>
-      <label for ="email">Email Address:</label><input type="text" id="email" name ="email" placeholder="ex: name@email.com" required/>
-   </div>
-   <div>
-     What is your relationship to the University of Michigan?
-     <select>
-       <option>Select</option>
-       <option>University of Michigan Student</option>
-       <option>University of Michigan Faculty & Staff</option>
-       <option>Not affiliated with the University of Michigan</option>
-       <option>Other</option>
-     </select>
-   </div>
+      <div class="contactContainer">
+        <p class="contactP" id="unsure">At 20 years old, I feel like I am finally beginning to figure out my place.
+          Going into college with an undecided major, I remember it being incredibly
+          difficult to figure out my interests, where I belonged, and what I wanted to
+          do with my life. It wasn't until I got into the School of Information and my
+          Study Abroad program when it all started to come together- my interests,
+          passions, and life adventures were about to begin.</p>
+        <div class="alcazarDiv">
+          <img id="alcazar" src="images/alcazar.png" alt="Me in Sevilla at the Alcazar"/>
+        </div>
+        <p class="contactP" id="conclusion">I hope my portfolio has helped you learn a little bit more about me, my
+          family, and my travels. This is only a small glimpse into my life, and there
+          is much more to come, so hopefully this website will only increase in content
+          as the years continue! I definitely think this past year of 2019 has helped
+          me find a place in this world. Cheesy, I know, but I hope I can continue on
+          this path, and live according to my passions and goals.</p>
+        <div class="britishDiv">
+          <img id="british" src="images/british.png" alt="Me with my friends Bennie and Eddie in London!"/>
+        </div>
+        <p class=contactP id="sentence">Have a question or comment? Feel free to contact me, and I will get back
+          to you as soon as possible!</p>
 
-   <div>
-     <label for ="message">Message:</label></br><textarea name="message" rows="5" cols="30" placeholder="Please enter your message here!"></textarea>
-   </div>
+        <form action="https://formspree.io/xbjklvry" method="POST">
+          <fieldset>
+             <legend>Contact Me!</legend>
+             <div class = "contact">
+                <label for ="name">Name:</label><input type="text" id ="name" name="name" required/>
+                <label for ="email">Email Address:</label><input type="text" id="email" name ="email" placeholder="ex: name@email.com" required/>
+             </div>
+             <div>
+               What is your relationship to the University of Michigan?
+               <select>
+                 <option>Select</option>
+                 <option>University of Michigan Student</option>
+                 <option>University of Michigan Faculty & Staff</option>
+                 <option>Not affiliated with the University of Michigan</option>
+                 <option>Other</option>
+               </select>
+             </div>
 
-   <div>
-      <input type="reset"/>
-      <input type="submit" value=" Submit Form"/>
-   </div>
-   </fieldset>
-   </form>
+             <div>
+               <label for ="message">Message:</label></br><textarea name="message" rows="5" cols="30" placeholder="Please enter your message here!"></textarea>
+             </div>
+
+             <div>
+                <input type="reset"/>
+                <input type="submit" value=" Submit Form"/>
+             </div>
+             </fieldset>
+           </form>
+      </div>
     </main>
 
     <footer>

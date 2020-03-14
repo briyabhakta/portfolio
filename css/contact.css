@@ -76,12 +76,12 @@ fieldset div{
    border-radius: 5px;
 }
 
+
+
 .contact{
    display: grid;
    grid-template-columns: auto 1fr;
    grid-row-gap: 5px;
-
-
 }
 
 input[type=reset], input[type=submit]{
@@ -95,11 +95,79 @@ input, textarea, select{
    background-color:#FFFFFF;
 }
 
-input:focus{
+input:focus, select:focus, textarea:focus{
   border: 2px solid black;
   color: #002266;
   background: #ffcc00;
 }
+
+.contactP {
+  background-color: #ffcc00;
+  border: 3px solid black;
+  color: #002266;
+  border-radius: 20px;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+
+}
+
+img {
+  padding: 5px;
+  margin: 15px;
+  border: 1px solid black;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactContainer {
+  /* display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr; */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#unsure {
+  /* grid-row: 1 / auto;
+  grid-column: 2 / auto; */
+}
+
+.alcazarDiv {
+  /* grid-row: 2 / auto;
+  grid-column: 2 / auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#conclusion {
+  /* grid-row: 3 / auto;
+  grid-column: 2 / auto; */
+}
+
+.britishDiv {
+  /* grid-row: 4 / auto;
+  grid-column: 2 / auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sentence {
+  /* grid-row: 5 / auto;
+  grid-column: 2 / auto; */
+}
+
+form {
+  /* grid-row: 6 / auto;
+  grid-column: 2 / auto; */
+}
+
 
 
 @media screen and (min-width: 800px){
@@ -109,6 +177,50 @@ input:focus{
     padding: 10px;
     padding-top: 0;
   }
+
+  .contactContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+  }
+
+  #unsure {
+    grid-row: 1 / auto;
+    grid-column: 1 / auto;
+  }
+
+  .alcazarDiv {
+    grid-row: 1 / auto;
+    grid-column: 2 / auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #conclusion {
+    grid-row: 2 / auto;
+    grid-column: 2 / auto;
+  }
+
+  .britishDiv {
+    grid-row: 2 / auto;
+    grid-column: 1 / auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sentence {
+    grid-row: 3 / auto;
+    grid-column: 1 / auto;
+  }
+
+  form {
+    grid-row: 3 / auto;
+    grid-column: 2 / auto;
+  }
+
 
 
 
@@ -124,4 +236,60 @@ input:focus{
   footer {
     text-align: left;
   }
+
+  .contactContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px;
+  }
+
+  #unsure {
+    grid-row: 1 / auto;
+    grid-column: 1 / span 2;
+  }
+
+  .alcazarDiv {
+    grid-row: 1 / span 2;
+    grid-column: 3 / auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #conclusion {
+    grid-row: 3 / auto;
+    grid-column: 2 / span 3;
+  }
+
+  .britishDiv {
+    grid-row: 2 / span 3;
+    grid-column: 1 / auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sentence {
+    /* grid-row: 3 / auto;
+    grid-column: 1 / auto; */
+    display: none;
+  }
+
+  form {
+    grid-row: 2 / auto;
+    grid-column: 2 / auto;
+  }
+
+  .contactP {
+    font-size: 18px;
+    padding: 10px;
+    margin: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 40%;
+  }
+
 }
