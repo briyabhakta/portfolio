@@ -180,7 +180,7 @@ img {
 
 @-webkit-keyframes reveal {
   80%{
-    letter-spacing: 8px;
+    letter-spacing: 1px;
   }
   100% {
     background-size: 300% 300%;
@@ -195,7 +195,7 @@ img {
 
 @keyframes reveal {
   80%{
-    letter-spacing: 8px;
+    letter-spacing: 1px;
   }
   100% {
     background-size: 300% 300%;
