@@ -141,6 +141,10 @@ img {
   align-items: center;
 }
 
+form {
+  color: #ccddff;
+
+}
 
 @media screen and (min-width: 800px){
 
@@ -256,5 +260,4 @@ img {
     justify-content: center;
     align-items: center;
   }
-
 }

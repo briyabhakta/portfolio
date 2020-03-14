@@ -7,6 +7,42 @@ body {
   padding: 0;
 }
 
+.travelBody {
+  background-image: url('../images/ildefonso.jpeg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homeBody {
+  background-image: url('../images/nyc.jpeg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.famBody {
+  background-image: url('../images/greece.jpeg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactBody {
+  background-image: url('../images/valencia.jpeg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 a {
   color:#b3b3ff;
 }
@@ -95,30 +131,9 @@ img {
   padding: 15px;
   grid-row: 1 / auto;
   grid-column: 2 / auto;
-  /* animation-name: logo_wiggle;
-  animation-duration: 3s;
-  animation-iteration-count: 1; */
   margin: 0 auto;
 }
 
-
-@-webkit-keyframes logo_wiggle{
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes logo_wiggle{
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 @-webkit-keyframes enter{
   from {
@@ -141,6 +156,31 @@ img {
     font-size: 35px;
   }
 }
+
+#heading {
+  background: 50% 100% / 50% 50% no-repeat
+              radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: Zapfino, sans-serif;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+             glow 2500ms linear infinite 2000ms;
+}
+  @keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
+
 
 
 #intro {
@@ -215,6 +255,8 @@ img {
   height: 250px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
+  padding: 15px;
+  border: none;
 }
 
 .flip-card-inner {
@@ -279,13 +321,13 @@ fieldset{
 legend{
    text-align: center;
    font-family: Zapfino;
-
 }
 fieldset div{
    border: 2px solid black;
    margin: 2%;
    padding: 1%;
    border-radius: 5px;
+   background: #ccddff;
 }
 
 
@@ -341,6 +383,8 @@ input:focus, select:focus, textarea:focus{
   justify-content: center;
   align-items: center;
 }
+
+
 
 
 
@@ -483,5 +527,15 @@ input:focus, select:focus, textarea:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+
+@media screen and (prefers-reduced-motion: reduce) {
+  h2 {
+    animation: none;
+  }
+  #heading {
+    animation: none;
   }
 }
