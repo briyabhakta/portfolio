@@ -56,9 +56,9 @@ h2 {
   text-align: center;
   font-weight: normal;
   font-size: 35px;
-  animation-name: enter;
+  /* animation-name: enter;
   animation-duration: 5s;
-  animation-iteration-count: 1;
+  animation-iteration-count: 1; */
 }
 
 a.skip{
@@ -89,8 +89,14 @@ header {
 
 .nav_tabs {
   list-style-type: none;
-  display: inline;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.selected {
+  color: #ffcc00;
+
 }
 
 footer {
@@ -124,6 +130,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: enter;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
 }
 
 #portrait {
@@ -158,6 +167,7 @@ img {
 }
 
 #heading {
+  margin: 0;
   background: 50% 100% / 50% 50% no-repeat
               radial-gradient(ellipse at bottom, #fff, transparent, transparent);
   -webkit-background-clip: text;
@@ -167,19 +177,36 @@ img {
   animation: reveal 3000ms ease-in-out forwards 200ms,
              glow 2500ms linear infinite 2000ms;
 }
-  @keyframes reveal {
-    80%{
-      letter-spacing: 8px;
-    }
-    100% {
-      background-size: 300% 300%;
-    }
+
+@-webkit-keyframes reveal {
+  80%{
+    letter-spacing: 8px;
   }
-  @keyframes glow {
-    40% {
-      text-shadow: 0 0 8px #fff;
-    }
+  100% {
+    background-size: 300% 300%;
   }
+}
+
+@-webkit-keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+
+@keyframes reveal {
+  80%{
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
 
 
 
@@ -190,7 +217,8 @@ img {
 }
 
 .body {
-  background-color: #ffcc00;
+  /* background-color: #ffcc00; */
+  background-color: rgba(251, 199, 44, 0.57);
   border: 3px solid black;
   color: #002266;
   border-radius: 20px;
@@ -278,6 +306,31 @@ img {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  border-radius: 25px;
+  border-style: double;
+  border-color: #002266;
+  border-collapse: collapse;
+  animation-name: travgal;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes travgal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes travgal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .flip-card-front {
@@ -297,10 +350,13 @@ img {
   padding: unset;
   margin: unset;
   border: unset;
-  border-radius: unset;
   display: unset;
   justify-content: unset;
   align-items: unset;
+  filter: saturate(150%);
+  animation-name: travgal;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
 }
 
 #travIntro {
@@ -356,7 +412,7 @@ input:focus, select:focus, textarea:focus{
 }
 
 .contactP {
-  background-color: #ffcc00;
+  background-color: rgba(251, 199, 44, 0.57);
   border: 3px solid black;
   color: #002266;
   border-radius: 20px;
@@ -370,6 +426,7 @@ input:focus, select:focus, textarea:focus{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
 }
 
 .alcazarDiv {
@@ -538,4 +595,14 @@ input:focus, select:focus, textarea:focus{
   #heading {
     animation: none;
   }
+  .gallery {
+    animation: none;
+  }
+  img {
+    animation: none;
+  }
+  .flip-card-front, .flip-card-back {
+    animation: none;
+  }
+
 }
