@@ -228,10 +228,8 @@ img {
 
 .famContainer {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-row-gap: 15px;
-  padding-bottom: 5px;
+  grid-template-columns: auto 1fr;
+  padding: 15px;
 }
 
 .familyDiv {
