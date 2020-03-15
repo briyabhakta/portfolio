@@ -153,11 +153,9 @@ img {
 @keyframes enter{
   from {
     margin-left: -100%;
-    font-size: 1px;
   }
   to {
     margin-left: 0%;
-    font-size: 35px;
   }
 }
 
