@@ -82,9 +82,6 @@ header {
   padding: 15px;
   color: #ccddff;
   background: #002266;
-  position:relative;
-  right:0px;
-  width:100%;
 }
 
 .nav_tabs {
@@ -103,10 +100,7 @@ footer {
   text-align: center;
   color: #ccddff;
   background: #002266;
-  position:relative;
   padding: 5px;
-  bottom:0px;
-  width:100%;
 }
 
 li {
@@ -218,7 +212,6 @@ img {
 }
 
 .body {
-  /* background-color: #ffcc00; */
   background-color: rgba(251, 199, 44, 0.57);
   border: 3px solid black;
   color: #002266;
@@ -317,18 +310,22 @@ img {
 @-webkit-keyframes travgal {
   from {
     opacity: 0;
+    filter: grayscale(100);
   }
   to {
     opacity: 1;
+    filter: grayscale(0);
   }
 }
 
 @keyframes travgal {
   from {
     opacity: 0;
+    filter: grayscale(100);
   }
   to {
     opacity: 1;
+    filter: grayscale(0);
   }
 }
 
@@ -444,7 +441,7 @@ input:focus, select:focus, textarea:focus{
 
 
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 700px){
 
   li {
     float: left;
