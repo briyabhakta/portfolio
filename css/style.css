@@ -583,11 +583,9 @@ input:focus, select:focus, textarea:focus{
 
 
 @media screen and (prefers-reduced-motion: reduce) {
-  h2 {
-    animation: none;
-  }
   #heading {
     animation: none;
+    color: unset;
   }
   .gallery {
     animation: none;
